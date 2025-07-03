@@ -32,17 +32,17 @@ export const Hero = () => {
           La mejor newsletter semanal sobre movilidad eléctrica. Novedades, lanzamientos, cargadores, innovación y más.
         </p>
 
-        {/* Week selector */}
+        {/* Week selector with improved UX */}
         <div className="flex items-center justify-center gap-4 mb-8">
           <Button 
             variant="outline" 
             size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-[#0A2C4F] rounded-full p-3 transition-all duration-300"
+            className="group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg rounded-full p-3 transition-all duration-300 transform hover:scale-110"
           >
-            <ChevronLeft className="h-6 w-6" />
+            <ChevronLeft className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
           </Button>
           
-          <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30">
+          <div className="bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30 shadow-lg">
             <span className="text-lg font-bold text-white">
               Semana del 30 Dic - 5 Ene 2025
             </span>
@@ -51,9 +51,9 @@ export const Hero = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-[#0A2C4F] rounded-full p-3 transition-all duration-300"
+            className="group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg rounded-full p-3 transition-all duration-300 transform hover:scale-110"
           >
-            <ChevronRight className="h-6 w-6" />
+            <ChevronRight className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
           </Button>
         </div>
       </div>
