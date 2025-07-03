@@ -1,5 +1,5 @@
 
-import { Car, Battery, Bolt, MapPin } from "lucide-react";
+import { Car, Battery, Bolt, MapPin, Zap } from "lucide-react";
 
 const menuItems = [
   {
@@ -21,6 +21,11 @@ const menuItems = [
     icon: MapPin,
     title: "Comparativas",
     description: "Enfrentamos los mejores modelos del mercado"
+  },
+  {
+    icon: Zap,
+    title: "Innovación",
+    description: "Tecnología y avances en movilidad eléctrica"
   }
 ];
 
@@ -30,14 +35,14 @@ export const MenuSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A2C4F] mb-4 font-[Bungee]">
-            Menú del día
+            Menú de la semana
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Las 5 noticias más importantes que necesitas saber esta semana
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {menuItems.map((item, index) => (
             <div 
               key={index}

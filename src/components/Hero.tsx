@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Bolt } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -18,7 +18,7 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/0844df4b-62e9-4931-bfb3-3861b8983495.png" 
             alt="Mr. Volt Logo" 
-            className="w-48 h-48 md:w-64 md:h-64 object-contain filter drop-shadow-2xl"
+            className="w-64 h-64 md:w-80 md:h-80 object-contain filter drop-shadow-2xl"
           />
         </div>
 
@@ -32,26 +32,29 @@ export const Hero = () => {
           La mejor newsletter semanal sobre movilidad eléctrica. Novedades, lanzamientos, cargadores, innovación y más.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {/* Week selector */}
+        <div className="flex items-center justify-center gap-4 mb-8">
           <Button 
-            size="lg" 
-            className="bg-white text-[#0A2C4F] hover:bg-blue-50 text-lg px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            variant="outline" 
+            size="lg"
+            className="border-2 border-white text-white hover:bg-white hover:text-[#0A2C4F] rounded-full p-3 transition-all duration-300"
           >
-            <Bolt className="mr-2 h-5 w-5" />
-            Suscríbete Gratis
+            <ChevronLeft className="h-6 w-6" />
           </Button>
+          
+          <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30">
+            <span className="text-lg font-bold text-white">
+              Semana del 30 Dic - 5 Ene 2025
+            </span>
+          </div>
           
           <Button 
             variant="outline" 
             size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-[#0A2C4F] text-lg px-8 py-4 rounded-full font-bold transition-all duration-300"
+            className="border-2 border-white text-white hover:bg-white hover:text-[#0A2C4F] rounded-full p-3 transition-all duration-300"
           >
-            Ver Newsletter Anterior
+            <ChevronRight className="h-6 w-6" />
           </Button>
-        </div>
-
-        <div className="mt-8 text-blue-200">
-          <p className="text-sm">📧 Recibe las mejores noticias cada martes</p>
         </div>
       </div>
 
