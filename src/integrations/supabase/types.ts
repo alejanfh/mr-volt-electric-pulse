@@ -9,13 +9,119 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      edition_items: {
+        Row: {
+          display_order: number
+          edition_id: string
+          id: string
+          news_id: string
+        }
+        Insert: {
+          display_order: number
+          edition_id: string
+          id?: string
+          news_id: string
+        }
+        Update: {
+          display_order?: number
+          edition_id?: string
+          id?: string
+          news_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "edition_items_edition_id_fkey"
+            columns: ["edition_id"]
+            isOneToOne: false
+            referencedRelation: "weekly_editions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "edition_items_news_id_fkey"
+            columns: ["news_id"]
+            isOneToOne: false
+            referencedRelation: "news_items"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      news_items: {
+        Row: {
+          created_at: string
+          id: string
+          image_url: string | null
+          published_at: string
+          selected_for_edition: boolean | null
+          source_url: string
+          summary: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          published_at: string
+          selected_for_edition?: boolean | null
+          source_url: string
+          summary: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          image_url?: string | null
+          published_at?: string
+          selected_for_edition?: boolean | null
+          source_url?: string
+          summary?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      weekly_editions: {
+        Row: {
+          created_at: string
+          edition_date: string
+          id: string
+          intro_text: string | null
+        }
+        Insert: {
+          created_at?: string
+          edition_date: string
+          id?: string
+          intro_text?: string | null
+        }
+        Update: {
+          created_at?: string
+          edition_date?: string
+          id?: string
+          intro_text?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_latest_edition: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          edition_id: string
+          edition_date: string
+          intro_text: string
+          news_id: string
+          title: string
+          summary: string
+          source_url: string
+          image_url: string
+          published_at: string
+          display_order: number
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
