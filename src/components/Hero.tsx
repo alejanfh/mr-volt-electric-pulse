@@ -5,8 +5,13 @@ import { es } from "date-fns/locale";
 import { useEditionNavigation } from "@/hooks/useEditionNavigation";
 
 export const Hero = () => {
-  const { currentEdition, goToPreviousWeek, goToNextWeek } =
-    useEditionNavigation();
+  const {
+    currentEdition,
+    goToPreviousWeek,
+    goToNextWeek,
+    hasPreviousWeek,
+    hasNextWeek,
+  } = useEditionNavigation();
 
   const start = startOfWeek(new Date(currentEdition.edition_date), {
     weekStartsOn: 1,
@@ -49,9 +54,16 @@ export const Hero = () => {
         <div className="flex items-center justify-center gap-4 mb-8">
           <Button
             onClick={goToPreviousWeek}
+            disabled={!hasPreviousWeek}
             variant="outline"
             size="lg"
-            className="group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+            className={`group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white 
+    ${
+      !hasPreviousWeek
+        ? "opacity-40 cursor-not-allowed"
+        : "hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg hover:scale-110"
+    } 
+    rounded-full p-3 transition-all duration-300 transform`}
           >
             <ChevronLeft className="h-6 w-6" />
           </Button>
@@ -65,9 +77,16 @@ export const Hero = () => {
 
           <Button
             onClick={goToNextWeek}
+            disabled={!hasNextWeek}
             variant="outline"
             size="lg"
-            className="group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg rounded-full p-3 transition-all duration-300 transform hover:scale-110"
+            className={`group border-2 border-white/70 bg-white/10 backdrop-blur-sm text-white 
+    ${
+      !hasNextWeek
+        ? "opacity-40 cursor-not-allowed"
+        : "hover:bg-white hover:text-[#0A2C4F] hover:border-white hover:shadow-lg hover:scale-110"
+    } 
+    rounded-full p-3 transition-all duration-300 transform`}
           >
             <ChevronRight className="h-6 w-6" />
           </Button>

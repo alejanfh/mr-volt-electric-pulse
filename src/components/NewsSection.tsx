@@ -1,63 +1,31 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight, Loader2 } from "lucide-react";
-import { useNews } from "@/hooks/useNews";
+import { useEditionNavigation } from "@/hooks/useEditionNavigation";
+import { useEditionNews } from "@/hooks/useEditionNews";
+import { Card } from "@/components/ui/card";
+import { Loader2, Calendar, ArrowRight } from "lucide-react";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
+import { Button } from "@/components/ui/button";
 
 export const NewsSection = () => {
-  const { data: news, isLoading, error } = useNews();
+  const { currentEdition } = useEditionNavigation();
+  const date = currentEdition.edition_date.split("T")[0];
+
+  const { data: editionData, isLoading, error } = useEditionNews(date);
 
   if (isLoading) {
     return (
-      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A2C4F] mb-4 font-[Bungee]">
-              Últimas noticias eléctricas
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Mantente al día con las novedades más importantes del mundo EV
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Loader2 className="h-8 w-8 animate-spin text-[#1477C3]" />
-          </div>
-        </div>
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white text-center flex justify-center">
+        <Loader2 className="h-12 w-12 animate-spin text-[#1477C3]" />
       </section>
     );
   }
 
-  if (error) {
+  if (error || !editionData?.length) {
     return (
-      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A2C4F] mb-4 font-[Bungee]">
-              Últimas noticias eléctricas
-            </h2>
-            <p className="text-lg text-red-600">
-              Error al cargar las noticias. Por favor, inténtalo más tarde.
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (!news || news.length === 0) {
-    return (
-      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A2C4F] mb-4 font-[Bungee]">
-              Últimas noticias eléctricas
-            </h2>
-            <p className="text-lg text-gray-600">
-              No hay noticias disponibles en este momento.
-            </p>
-          </div>
-        </div>
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white text-center">
+        <p className="text-gray-600">
+          No hay noticias disponibles para esta semana.
+        </p>
       </section>
     );
   }
@@ -69,13 +37,13 @@ export const NewsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A2C4F] mb-4 font-[Bungee]">
             Últimas noticias eléctricas
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600">
             Mantente al día con las novedades más importantes del mundo EV
           </p>
         </div>
 
         <div className="space-y-8">
-          {news.slice(0, 5).map((item) => (
+          {editionData.map((item) => (
             <Card
               key={item.id}
               className="border border-[#55C2F5]/20 shadow-md hover:shadow-lg transition-all duration-300"
