@@ -19,17 +19,17 @@ export const Footer = () => {
           </div>
           
           <div className="flex flex-wrap gap-6 text-sm">
-            <a href="#" className="hover:text-[#55C2F5] transition-colors duration-300">
-              Sobre nosotros
+            <a href="/aviso-legal" className="hover:text-[#55C2F5] transition-colors duration-300">
+              Aviso Legal
             </a>
-            <a href="#" className="hover:text-[#55C2F5] transition-colors duration-300">
-              Archivo
+            <a href="/politica-privacidad" className="hover:text-[#55C2F5] transition-colors duration-300">
+              Política de Privacidad
             </a>
-            <a href="#" className="hover:text-[#55C2F5] transition-colors duration-300">
+            <a href="/politica-cookies" className="hover:text-[#55C2F5] transition-colors duration-300">
+              Política de Cookies
+            </a>
+            <a href="mailto:animalitoemprendedor@gmail.com" className="hover:text-[#55C2F5] transition-colors duration-300">
               Contacto
-            </a>
-            <a href="#" className="hover:text-[#55C2F5] transition-colors duration-300">
-              Política de privacidad
             </a>
           </div>
         </div>
