@@ -53,34 +53,43 @@ export type Database = {
       news_items: {
         Row: {
           created_at: string
+          headline: string | null
           id: string
           image_url: string | null
           published_at: string
           selected_for_edition: boolean | null
+          short_description: string | null
+          short_title: string | null
           source_url: string
-          summary: string
+          summary: string | null
           title: string
           updated_at: string
         }
         Insert: {
           created_at?: string
+          headline?: string | null
           id?: string
           image_url?: string | null
           published_at: string
           selected_for_edition?: boolean | null
+          short_description?: string | null
+          short_title?: string | null
           source_url: string
-          summary: string
+          summary?: string | null
           title: string
           updated_at?: string
         }
         Update: {
           created_at?: string
+          headline?: string | null
           id?: string
           image_url?: string | null
           published_at?: string
           selected_for_edition?: boolean | null
+          short_description?: string | null
+          short_title?: string | null
           source_url?: string
-          summary?: string
+          summary?: string | null
           title?: string
           updated_at?: string
         }
