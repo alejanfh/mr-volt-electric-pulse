@@ -1,3 +1,4 @@
+// components/NewsSection.tsx
 import { useEditionNavigation } from "@/hooks/useEditionNavigation";
 import { useEditionNews } from "@/hooks/useEditionNews";
 import { Card } from "@/components/ui/card";
@@ -8,9 +9,8 @@ import { Button } from "@/components/ui/button";
 
 export const NewsSection = () => {
   const { currentEdition } = useEditionNavigation();
-  const date = currentEdition.edition_date.split("T")[0];
-
-  const { data: editionData, isLoading, error } = useEditionNews(date);
+  const date = currentEdition.edition_date;
+  const { data: editionData, isLoading } = useEditionNews(date);
 
   if (isLoading) {
     return (
@@ -20,7 +20,7 @@ export const NewsSection = () => {
     );
   }
 
-  if (error || !editionData?.length) {
+  if (!editionData?.length) {
     return (
       <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white text-center">
         <p className="text-gray-600">
@@ -50,7 +50,7 @@ export const NewsSection = () => {
             >
               <div className="md:flex h-full">
                 {item.image_url && (
-                  <div className="w-full md:w-64 h.48 md:h-auto flex shrink-0 overflow-hidden">
+                  <div className="w-full md:w-64 h-48 md:h-auto flex shrink-0 overflow-hidden">
                     <img
                       src={item.image_url}
                       alt={item.title}

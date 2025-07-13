@@ -1,12 +1,12 @@
+// components/MenuSection.tsx
 import { useEditionNavigation } from "@/hooks/useEditionNavigation";
 import { useEditionNews } from "@/hooks/useEditionNews";
 import { Loader2 } from "lucide-react";
 
 export const MenuSection = () => {
   const { currentEdition } = useEditionNavigation();
-  const date = currentEdition.edition_date.split("T")[0];
-
-  const { data: editionData, isLoading, error } = useEditionNews(date);
+  const date = currentEdition.edition_date;
+  const { data: editionData, isLoading } = useEditionNews(date);
 
   if (isLoading) {
     return (
@@ -16,7 +16,7 @@ export const MenuSection = () => {
     );
   }
 
-  if (error || !editionData?.length) {
+  if (!editionData?.length) {
     return (
       <section className="py-16 px-4 bg-white text-center">
         <p className="text-gray-600">
