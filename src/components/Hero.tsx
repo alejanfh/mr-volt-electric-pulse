@@ -3,22 +3,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { format, startOfWeek, endOfWeek } from "date-fns";
 import { es } from "date-fns/locale";
 import { useEditionNavigation } from "@/hooks/useEditionNavigation";
+import { useEdition } from "@/context/edition-context";
 
 export const Hero = () => {
   const {
-    currentEdition,
+    editionDate,
     goToPreviousWeek,
     goToNextWeek,
     hasPreviousWeek,
     hasNextWeek,
-  } = useEditionNavigation();
+  } = useEdition();
 
-  const start = startOfWeek(new Date(currentEdition.edition_date), {
-    weekStartsOn: 1,
-  });
-  const end = endOfWeek(new Date(currentEdition.edition_date), {
-    weekStartsOn: 1,
-  });
+  const start = startOfWeek(editionDate, { weekStartsOn: 1 });
+  const end = endOfWeek(editionDate, { weekStartsOn: 1 });
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-br from-[#0A2C4F] via-[#1477C3] to-[#55C2F5] text-white overflow-hidden">

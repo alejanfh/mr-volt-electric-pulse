@@ -1,12 +1,14 @@
 // components/MenuSection.tsx
+import { useEdition } from "@/context/edition-context";
 import { useEditionNavigation } from "@/hooks/useEditionNavigation";
 import { useEditionNews } from "@/hooks/useEditionNews";
 import { Loader2 } from "lucide-react";
 
 export const MenuSection = () => {
   const { currentEdition } = useEditionNavigation();
-  const date = currentEdition.edition_date;
-  const { data: editionData, isLoading } = useEditionNews(date);
+
+  const { editionDate } = useEdition();
+  const { data: editionData, isLoading } = useEditionNews(editionDate);
 
   if (isLoading) {
     return (

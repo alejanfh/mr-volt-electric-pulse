@@ -6,11 +6,11 @@ import { Loader2, Calendar, ArrowRight } from "lucide-react";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import { Button } from "@/components/ui/button";
+import { useEdition } from "@/context/edition-context";
 
 export const NewsSection = () => {
-  const { currentEdition } = useEditionNavigation();
-  const date = currentEdition.edition_date;
-  const { data: editionData, isLoading } = useEditionNews(date);
+  const { editionDate } = useEdition();
+  const { data: editionData, isLoading } = useEditionNews(editionDate);
 
   if (isLoading) {
     return (
@@ -69,7 +69,7 @@ export const NewsSection = () => {
                     {item.title}
                   </h3>
                   <p className="text-gray-700 mb-4 whitespace-pre-line">
-                    {item.summary}
+                    {item.detail_summary}
                   </p>
                   <div className="mt-auto">
                     <Button
