@@ -24,58 +24,60 @@ export const fallbackNewsData: WeeklyEdition[] = [
         summary:
           "Cupra confirma el lanzamiento del Raval, su EV urbano en 2025.",
         detail_summary:
-          "Cupra ha confirmado que el Raval, derivado del concept UrbanRebel, llegará en 2025 como su primer urbano totalmente eléctrico, con 226 CV y una autonomía de hasta 440 km, fabricado en Martorell.",
-        source_url: "https://www.cupraofficial.com/concept-cars/urbanrebel",
+          "Cupra ha presentado el Raval, derivado del concept UrbanRebel, que llegará en 2025 como su primer urbano 100 % eléctrico con 226 CV, hasta 440 km de autonomía y fabricación en Martorell bajo PERTE VEC.",
+        source_url:
+          "https://es.motor1.com/news/761677/cupra-raval-debut-septiembre-lanzamiento/",
         image_url:
-          "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800",
-        published_at: "2025-07-10T09:00:00Z",
+          "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800",
+        published_at: "2025-06-10T14:00:00Z",
         display_order: 1,
       },
       {
         id: "2",
-        title: "Tesla Model Y impulsa ventas en España",
-        summary: "Ventas del Model Y crecen +61 % en junio vs año anterior.",
+        title: "Ventas Tesla Model Y suben +61 % en España",
+        summary: "Ventas del Model Y crecen un 61 % en junio en España.",
         detail_summary:
-          "Tesla ha registrado un aumento del 61 % en ventas del Model Y en España durante junio 2025 (2 632 unidades), gracias al modelo actualizado y fuerte demanda en mercado europeo.",
+          "Tesla ha registrado un aumento del 61 % en las ventas del Model Y en España durante junio 2025, con 2 632 unidades matriculadas, impulsadas por la renovada versión y fuerte demanda europea.",
         source_url:
           "https://www.reuters.com/business/retail-consumer/new-tesla-sales-spain-rise-61-june-2025-07-01/",
         image_url:
-          "https://images.unsplash.com/photo-1676969535152-e05370c6d108?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1676969535152-e05370c6d108?w=800",
         published_at: "2025-07-01T08:00:00Z",
         display_order: 2,
       },
       {
         id: "3",
-        title: "Skoda inicia producción del Elroq",
-        summary: "Comienza la fabricación en serie del nuevo SUV Elroq.",
+        title: "España supera 10.000 EV vendidos en junio",
+        summary: "España rompe 10 000 ventas mensuales de eléctricos.",
         detail_summary:
-          "Škoda ha iniciado la producción del Elroq, un SUV compacto 100 % eléctrico, en su planta de Mladá Boleslav, con capacidad de 600 unidades/día y más de 20 000 pedidos registrados.",
+          "En junio de 2025, España superó por primera vez las 10 000 matriculaciones de coches eléctricos en un mes (11 334 unidades), un 104 % más que el año anterior, gracias a ayudas del Plan Reinicia Auto+ y MOVES III.",
         source_url:
-          "https://www.skoda-storyboard.com/en/press-releases/skoda-elroq-czech-carmaker-powers-up-production-of-its-most-affordable-all-electric-model/",
+          "https://cincodias.elpais.com/companias/2025-07-01/las-ventas-de-coches-electricos-en-espana-superan-las-10000-unidades-por-primera-vez.html",
         image_url:
-          "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800",
-        published_at: "2025-01-22T07:00:00Z",
+          "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800",
+        published_at: "2025-07-01T12:41:12Z",
         display_order: 3,
       },
       {
         id: "4",
-        published_at: "2025-07-10T13:00:00Z",
-        title: "España lidera crecimiento EV en Europa",
-        summary: "España encabeza el crecimiento eléctrico en junio.",
+        title: "Estudio: baterías EV duran más de 12 años",
+        summary:
+          "Geotab analiza 10 000 EV y concluye que la mayoría mantiene >80 % de capacidad a 12 años.",
         detail_summary:
-          "España lidera el crecimiento de ventas de coches eléctricos entre los grandes mercados europeos, con un aumento del 15,3 % gracias al plan MOVES III y mayor demanda.",
+          "Un estudio de Geotab con datos de 10 000 vehículos eléctricos revela que la degradación media anual es del 1,8 %, significativamente menor que hace cinco años, y que la mayoría de baterías supera la vida útil del propio coche, conservando más del 80 % tras 12 años, incluso en flotas y con uso de carga rápida.",
         source_url:
-          "https://autovista24.autovistagroup.com/news/spain-leads-european-new-car-markets-with-impressive-ev-growth/",
+          "https://www.hibridosyelectricos.com/coches/cuantos-dura-bateria-coche-electrico-estudio-10000-vehiculos-tiene-respuesta_81310_102.html",
         image_url:
-          "https://images.unsplash.com/photo-1751355356724-7df0dda28b2b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800",
+        published_at: "2025-07-18T14:20:00Z",
         display_order: 4,
       },
       {
         id: "5",
-        title: "Iberdrola instalará 500 cargadores rápidos",
-        summary: "Iberdrola desplegará 500 puntos de carga en autopistas.",
+        title: "Iberdrola anuncia 500 cargadores rápidos",
+        summary: "Iberdrola instalará 500 puntos de carga en autopistas.",
         detail_summary:
-          "La compañía eléctrica Iberdrola ha anunciado un plan para instalar 500 cargadores rápidos de alto rendimiento en autopistas y áreas estratégicas de España, acelerando la infraestructura EV.",
+          "Iberdrola planea instalar 500 cargadores rápidos en autopistas y áreas estratégicas de España, reforzando la infraestructura de recarga para vehículos eléctricos y mejorando la cobertura nacional.",
         source_url:
           "https://forococheselectricos.com/noticias/iberdrola-500-cargadores-rapidos-2025/",
         image_url:
