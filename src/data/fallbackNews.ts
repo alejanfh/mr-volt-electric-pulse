@@ -85,6 +85,33 @@ export const fallbackNewsData: WeeklyEdition[] = [
         published_at: "2025-07-03T12:00:00Z",
         display_order: 5,
       },
+      {
+        id: "6",
+        title: "Subaru lanzará tres nuevos eléctricos en Europa",
+        summary: "Subaru anuncia nuevos modelos EV para 2025 y 2026 en Europa.",
+        detail_summary:
+          "Subaru ha presentado su estrategia eléctrica para Europa con el nuevo Solterra 2025, el concept Uncharted, y el futuro e-Outback. El Solterra se actualiza con más autonomía y acabados. El Uncharted adelanta un SUV urbano, y el e-Outback será el primero 100 % eléctrico de gran tamaño de la marca japonesa.",
+        source_url:
+          "https://www.carwow.es/subaru/noticias/5910/subaru-electricos-solterra-uncharted-eoutback-precio-lanzamiento-medidas#gref",
+        image_url:
+          "https://carwow-es-wp-2.imgix.net/uncharted-mini.jpg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=10&w=800",
+        published_at: "2025-07-16T10:00:00Z",
+        display_order: 6,
+      },
+      {
+        id: "7",
+        title: "Rivian se alía con Uber para lanzar robotaxis",
+        summary:
+          "Uber usará SUVs eléctricos de Rivian para robotaxis en EE.UU.",
+        detail_summary:
+          "Rivian ha anunciado una alianza con Uber para integrar sus futuros SUV eléctricos autónomos en servicios de robotaxis en EE. UU. Esta colaboración incluye el uso de la plataforma Rivian RCV, y promete reducir costes y emisiones, situando a Rivian como fuerte rival de Tesla en movilidad autónoma.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/mayor-rival-tesla-se-asocia-con-uber-sumarse-robotaxis-usara-el-mejor-suv-electrico-mundo_81316_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/12/25/8/mayor-rival-tesla-uber-robotaxi-mejor-suv-electrico-del-mundo3_4_1000x563.jpeg",
+        published_at: "2025-07-18T11:15:00Z",
+        display_order: 7,
+      },
     ],
   },
   {
