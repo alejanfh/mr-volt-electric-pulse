@@ -9,13 +9,11 @@ import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import { EditionProvider } from "./context/edition-context";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <SpeedInsights />
     <TooltipProvider>
       <EditionProvider>
         <Toaster />
