@@ -47,6 +47,15 @@ export const Hero = () => {
           lanzamientos, cargadores, innovación y más.
         </p>
 
+        <div className="my-4">
+          <a
+            href="/cargadores-destacados"
+            className="inline-block bg-white/20 border border-white/50 px-6 py-3 rounded-full text-white font-semibold hover:bg-white hover:text-[#0A2C4F] transition duration-300 shadow-lg"
+          >
+            ⚡ Guía MrVolt de Cargadores 5 Rayos
+          </a>
+        </div>
+
         {/* Semana */}
         <div className="flex items-center justify-center gap-4 mb-8">
           <Button

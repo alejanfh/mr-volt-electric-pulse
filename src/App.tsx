@@ -9,6 +9,7 @@ import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import { EditionProvider } from "./context/edition-context";
+import FeaturedChargers from "./pages/FeaturedChargers";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,10 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route
+              path="/cargadores-destacados"
+              element={<FeaturedChargers />}
+            />
             <Route path="/aviso-legal" element={<AvisoLegal />} />
             <Route
               path="/politica-privacidad"
