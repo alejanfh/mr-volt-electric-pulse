@@ -16,6 +16,102 @@ export interface WeeklyEdition {
 
 export const fallbackNewsData: WeeklyEdition[] = [
   {
+    edition_date: "2025-07-21",
+    news: [
+      {
+        id: "1",
+        title: "¿Por qué Tesla cuesta 28 000 € en China y 40 000 € en Europa?",
+        summary: "Gran diferencia de precio del Tesla en dos mercados clave.",
+        detail_summary:
+          "Análisis del porqué Model 3 cuesta 28 000 € en China pero 40 000 € en Europa; factores como aranceles, logística y demanda intervienen.",
+        source_url:
+          "https://forococheselectricos.com/noticias/por-que-tesla-cuesta-28000-euros-china-y-40000-euros-en-europa-20250723-37788.html",
+        image_url:
+          "https://images.forococheselectricos.com/2025/07/23/tesla-precios-china-europa.jpg",
+        published_at: "2025-07-23T08:00:00Z",
+        display_order: 1,
+      },
+      {
+        id: "2",
+        title: "Elon Musk adelanta su Tesla más barato",
+        summary: "Musk revela diseño del coche más económico de Tesla.",
+        detail_summary:
+          "Elon Musk describe el próximo Tesla 'Low Cost', indicando prestaciones ajustadas y precio inferior al Model 3; expectativas renovadas.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/elon-musk-desvela-como-sera-coche-mas-barato-tesla-es-bastante-decepcionante_81400_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/16/83/1/tesla_4_1000x563.jpeg",
+        published_at: "2025-07-24T10:30:00Z",
+        display_order: 2,
+      },
+      {
+        id: "3",
+        title: "Proyecto eléctrico del Puerto de Sevilla",
+        summary: "Endesa y Puerto amplían subestación para impulsar carga.",
+        detail_summary:
+          "El Puerto de Sevilla y Endesa invertirán 5 M€ para una subestación de 40 MW destinada a cargadores EV, OPS para cruceros y parque solar antes de 2028.",
+        source_url:
+          "https://www.puertodesevilla.com/comunicacion/actualidad/el-puerto-de-sevilla-y-endesa-presentan-la-nueva-infraestructura-electrica-que-impulsara-el-distrito-urbano-portuario-y-los-desarrollos-de-la-margen-izquierda",
+        image_url:
+          "https://www.puertodesevilla.com/templates/yootheme/cache/9e/RafaelCarmonaRafaelSanchez-9e4d1d8e.webp",
+        published_at: "2025-07-21T12:30:00Z",
+        display_order: 3,
+      },
+      {
+        id: "4",
+        title: "Subaru lanza nueva familia eléctrica",
+        summary: "Uncharted, Solterra y E‑Outback desembarcan en Europa.",
+        detail_summary:
+          "Subaru presenta en EEUU su gama eléctrica europea: el crossover Uncharted, la actualización del Solterra y el E‑Outback, basados en plataformas Toyota.",
+        source_url:
+          "https://forococheselectricos.com/noticias/subaru-nueva-gama-electrica-europa-uncharted-solterra-e-outback-20250718-37745.html",
+        image_url:
+          "https://images.forococheselectricos.com/image/l/1100w/editorial/cc569cccd16d0beb37b3f8cd0e6a11ddad090639497c712856210751a442d30d.jpeg",
+        published_at: "2025-07-21T11:29:00Z",
+        display_order: 4,
+      },
+      {
+        id: "5",
+        title: "MG presenta los EV IM5 e IM6 en Goodwood",
+        summary: "MG revela dos eléctricos con hasta 655 km de autonomía.",
+        detail_summary:
+          "En Goodwood, MG anuncia sus IM5 e IM6 para Europa, con hasta 655 km WLTP, grandes pantallas y conducción asistida Momenta.",
+        source_url:
+          "https://forococheselectricos.com/noticias/mg-im5-im6-nuevos-coches-electricos-avanzados-europa-20250711-37672.html",
+        image_url:
+          "https://images.forococheselectricos.com/image/l/1100w/editorial/2f2f1797ff20f242043232d8fa01c40631cc835d94b38cc01b5bbbbebad0086e.jpeg",
+        published_at: "2025-07-22T10:46:00Z",
+        display_order: 5,
+      },
+      {
+        id: "6",
+        title: "España vende 11 334 EV en junio, récord",
+        summary: "España bate récord de matriculaciones EV en junio.",
+        detail_summary:
+          "Con 11 334 eléctricos vendidos en junio (＋104 % vs 2024), España marca un récord histórico, impulsado por ayudas del Plan Reinicia Auto+ y MOVES III.",
+        source_url:
+          "https://cincodias.elpais.com/companias/2025-07-01/las-ventas-de-coches-electricos-en-espana-superan-las-10000-unidades-por-primera-vez.html",
+        image_url:
+          "https://imagenes.elpais.com/resizer/v2/APEJ272O7NF6LLMUPSHQBTWJ5I.JPG?auth=cba7a6094a2f10a25a61c46fc7a8a83f9b74f62456c189bbfc0543fef42de887&width=1200",
+        published_at: "2025-07-23T12:41:12Z",
+        display_order: 6,
+      },
+      {
+        id: "7",
+        title: "Estudio: baterías EV duran >12 años",
+        summary: "Las baterías mantienen >80 % de capacidad tras 12 años.",
+        detail_summary:
+          "Un estudio con 10 000 EV muestra una degradación del 1,8 % anual; la mayoría conserva más del 80 % de capacidad tras 12 años, incluso con carga rápida.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/cuantos-dura-bateria-coche-electrico-estudio-10000-vehiculos-tiene-respuesta_81310_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/11/88/1/bateria-coche-electrico-volkswagen_4_1000x563.jpeg",
+        published_at: "2025-07-18T14:20:00Z",
+        display_order: 7,
+      },
+    ],
+  },
+  {
     edition_date: "2025-07-14",
     news: [
       {
