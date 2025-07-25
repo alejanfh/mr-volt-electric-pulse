@@ -1,4 +1,3 @@
-
 import { Hero } from "@/components/Hero";
 import { MenuSection } from "@/components/MenuSection";
 import { NewsSection } from "@/components/NewsSection";
@@ -8,7 +7,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-slate-50">
       <Hero />
-      <MenuSection />
+      {/* <MenuSection /> */}
       <NewsSection />
       <Footer />
     </div>

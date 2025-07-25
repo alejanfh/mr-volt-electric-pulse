@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Link, Zap } from "lucide-react";
+import { ExternalLink, Zap } from "lucide-react";
 
 export function ChargerCard({ charger }) {
   return (
-    <Card className="p-4 rounded-2xl shadow-lg">
+    <Card className="p-4 rounded-2xl relative shadow-lg">
       <img
         src={charger.image}
         alt={charger.title}
@@ -19,9 +19,9 @@ export function ChargerCard({ charger }) {
         href={charger.maps_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-700 items-center flex gap-1 font-semibold mb-2  hover:underline"
+        className="text-blue-700 items-center flex gap-1 font-semibold mb-2 hover:underline"
       >
-        {charger.location} <Link className="w-4 h-4" />
+        {charger.location} <ExternalLink className="w-4 h-4" />
       </a>
       <CardContent className="text-sm p-1 text-justify text-muted-foreground">
         {charger.description}

@@ -46,7 +46,7 @@ export const NewsSection = () => {
           {editionData.map((item) => (
             <Card
               key={item.id}
-              className="border border-[#55C2F5]/20 shadow-md hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-br from-[#55C2F5]/10 to-[#1477C3]/10 rounded-2xl  text-start hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-[#55C2F5]/20 cursor-pointer group"
             >
               <div className="md:flex h-full">
                 {item.image_url && (
@@ -54,20 +54,20 @@ export const NewsSection = () => {
                     <img
                       src={item.image_url}
                       alt={item.title}
-                      className="w-full h-full object-cover"
+                      className="w-full rounded-tl-2xl rounded-bl-2xl h-full object-cover"
                     />
                   </div>
                 )}
                 <div className="flex flex-col p-6">
+                  <h3 className="text-xl font-bold text-[#0A2C4F] mb-2">
+                    {item.title}
+                  </h3>
                   <div className="flex items-center text-gray-500 text-sm mb-2">
                     <Calendar className="h-4 w-4 mr-1" />
                     {format(new Date(item.published_at), "d MMM yyyy", {
                       locale: es,
                     })}
                   </div>
-                  <h3 className="text-xl font-bold text-[#0A2C4F] mb-2">
-                    {item.title}
-                  </h3>
                   <p className="text-gray-700 mb-4 whitespace-pre-line">
                     {item.detail_summary}
                   </p>
