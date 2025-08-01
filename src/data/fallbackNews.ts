@@ -16,6 +16,102 @@ export interface WeeklyEdition {
 
 export const fallbackNewsData: WeeklyEdition[] = [
   {
+    edition_date: "2025-07-28",
+    news: [
+      {
+        id: "1",
+        title: "Madrid estrena hub urbano ultra‑rápido EV",
+        summary: "Nuevo hub en Madrid con carga ultra‑rápida y renovable.",
+        detail_summary:
+          "Madrid inaugura en Nuevos Ministerios un hub urbano con 40 cargadores ultra‑rápidos (175–350 kW), energía 100 % renovable y acceso automatizado.",
+        source_url:
+          "https://ftnnews.com/spains-largest-ev-charging-hub-opens-in-madrid/",
+        image_url:
+          "https://ftnnews.com/wp-content/uploads/2025/07/porsche-taycan-macan-madrid-ev-charging-hub-1320x743.webp",
+        published_at: "2025-07-31T14:00:00Z",
+        display_order: 1,
+      },
+      {
+        id: "2",
+        title: "Toyota fabricará más coches eléctricos en Europa",
+        summary: "Toyota planea producir más EV en suelo europeo.",
+        detail_summary:
+          "Toyota estudia ampliar su producción de coches eléctricos en Europa para adaptarse a la normativa y acelerar su electrificación en el continente.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/sus-hibridos-son-exito-pero-toyota-quiere-fabricar-en-europa-muchos-sus-coches-electricos_81519_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/23/64/5/toyota_4_1000x563.jpeg",
+        published_at: "2025-07-29T11:00:00Z",
+        display_order: 2,
+      },
+      {
+        id: "3",
+        title: "El eléctrico chino homologa 820 km de autonomía",
+        summary: "Nuevo EV chino acredita 820 km CLTC (~750 km WLTP).",
+        detail_summary:
+          "El modelo chino supera los 820 km CLTC (≈750 km WLTP), marcando un récord de autonomía, aunque aún sin confirmación oficial de llegada a Europa.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/820-kilometros-autonomia-este-electrico-marca-de-records-pero-lo-veremos-en-espana_81535_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/24/28/3/820-kilometros-de-autonomia-electrico-marca-de-records-espana-3-detalle_4_1000x563.jpeg",
+        published_at: "2025-07-30T09:15:00Z",
+        display_order: 3,
+      },
+      {
+        id: "4",
+        title: "Tesla ventas +61 % en junio España",
+        summary: "Tesla registra subida del 61 % en ventas en junio.",
+        detail_summary:
+          "Tesla matriculó 2 632 unidades en junio de 2025 en España (＋60,7 % vs 2024), contribuyendo al fuerte crecimiento del mercado EV nacional.",
+        source_url:
+          "https://www.reuters.com/business/retail-consumer/new-tesla-sales-spain-rise-61-june-2025-07-01/",
+        image_url:
+          "https://www.reuters.com/resizer/v2/UPBG53YYLBM4LAE6KSA6R3PVEU.jpg?auth=52261f099eac703f2ec63405b0ccda2c26d974dd73c6c7e611345812eef12cea&width=640&quality=80",
+        published_at: "2025-07-01T10:42:00Z",
+        display_order: 4,
+      },
+      {
+        id: "5",
+        title: "Tesla EV económico derivado del Model Y",
+        summary: "Tesla confirma EV barato basado en el Model Y.",
+        detail_summary:
+          "Tesla aclaró que su futuro EV asequible se basa en el Model Y, con producción prevista en la segunda mitad de 2025 y precio por debajo de los 30 000 USD.",
+        source_url:
+          "https://www.theverge.com/tesla/713026/tesla-cheaper-model-y-stripped-down",
+        image_url:
+          "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25434354/Screenshot_2024_05_05_at_10.54.59_AM.png?quality=90&strip=all&crop=8.4074941451991%2C0%2C83.185011709602%2C100&w=750",
+        published_at: "2025-07-24T13:30:00Z",
+        display_order: 5,
+      },
+      {
+        id: "6",
+        title: "Subaru lanza tres eléctricos para Europa",
+        summary: "Subaru presenta Uncharted, Solterra y E‑Outback en Europa.",
+        detail_summary:
+          "Subaru estrena en EE. UU. su nueva gama eléctrica europea: los modelos Uncharted, Solterra actualizado y E‑Outback.",
+        source_url:
+          "https://forococheselectricos.com/noticias/subaru-nueva-gama-electrica-europa-uncharted-solterra-e-outback-20250718-37745.html",
+        image_url:
+          "https://images.forococheselectricos.com/image/l/1100w/editorial/cc569cccd16d0beb37b3f8cd0e6a11ddad090639497c712856210751a442d30d.jpeg",
+        published_at: "2025-07-18T11:29:00Z",
+        display_order: 6,
+      },
+      {
+        id: "7",
+        title: "Los 10 EV más esperados de 2025",
+        summary: "Ranking de los coches eléctricos más esperados del año.",
+        detail_summary:
+          "Híbridos y Eléctricos publica listado con lanzamientos esperados como Toyota Urban Cruiser, KIA EV5, Renault 4 E‑Tech y Cupra Raval para 2025‑2026.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/10-coches-electricos-mas-importantes-2025_77852_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/91/35/75/tesla-model-y-delantera_4_1000x563.jpeg",
+        published_at: "2025-07-27T08:00:00Z",
+        display_order: 7,
+      },
+    ],
+  },
+  {
     edition_date: "2025-07-21",
     news: [
       {
