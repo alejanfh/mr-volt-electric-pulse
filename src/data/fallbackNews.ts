@@ -16,6 +16,161 @@ export interface WeeklyEdition {
 
 export const fallbackNewsData: WeeklyEdition[] = [
   {
+    edition_date: "2025-08-11",
+    news: [
+      {
+        id: "1",
+        title: "Mercedes pide realismo ante veto UE 2035",
+        summary:
+          "CEO de Mercedes advierte sobre prisa hacia el veto de motores térmicos.",
+        detail_summary:
+          "Ola Källenius (Mercedes) señala que el veto de combustibles en 2035 podría debilitar la industria europea sin incentivos, y reclama equilibrio regulatorio y apoyo público.",
+        source_url:
+          "https://www.reuters.com/sustainability/climate-energy/mercedes-ceo-calls-reality-check-slamming-eu-combustion-engine-ban-2025-08-11/",
+        image_url:
+          "https://www.reuters.com/resizer/v2/WBQWOLKFIRM2HBU6W47YYL5W2I.jpg?auth=dde55983f1786c6b7ff792ab81ef644a67280e8e5ae592b8cc94a46bdc8e9da8&width=640&quality=80",
+        published_at: "2025-08-11T09:15:00+02:00",
+        display_order: 1,
+      },
+      {
+        id: "2",
+        title: "Crecen ventas Tesla en España +27% en julio",
+        summary: "Tesla mejora ventas un 27% en julio en España.",
+        detail_summary:
+          "Tesla incrementó sus ventas en España un 27% en julio, con 702 unidades, impulsada por la creciente demanda de vehículos electrificados (+155%).",
+        source_url:
+          "https://evxl.co/es_es/2025/08/01/tesla-fights-back-in-spain-with-27-jump/",
+        image_url:
+          "https://evxl.co/wp-content/uploads/2025/06/Tesla-Unleashes-Final-Q2-2025-Promotions-for-EV-Enthusiasts-2-1536x864.jpeg",
+        published_at: "2025-08-11T12:00:00+02:00",
+        display_order: 2,
+      },
+      {
+        id: "3",
+        title: "Ventas globales de EV suben +21% en julio",
+        summary: "Ventas mundiales de EV suben 21% en julio.",
+        detail_summary:
+          "Las ventas globales de EV crecieron 21% interanual en julio; Europa subió 48%, pero China se ralentizó debido a ajustes en subsidios.",
+        source_url:
+          "https://www.reuters.com/business/autos-transportation/electric-vehicle-sales-growth-eases-21-july-research-firm-says-2025-08-12/",
+        image_url:
+          "https://www.reuters.com/resizer/v2/5IRLMOVXQVLEREAUSVASNLAFN4.jpg?auth=30e1c7f8f40f03306b65049346c91b09189e8b2d63f736c87fc713fcaa44ecd0&width=640&quality=80",
+        published_at: "2025-08-12T10:00:00+02:00",
+        display_order: 3,
+      },
+      {
+        id: "4",
+        title: "Italia aprueba €600M en ayudas EV",
+        summary: "Italia lanza ayudas de hasta €10 000 para EV.",
+        detail_summary:
+          "Italia aprueba un paquete de €600 M para ayudas de compra y empresas, cubriendo hasta 30%, con incentivos de hasta €10 000 por vehículo.",
+        source_url:
+          "https://www.reuters.com/sustainability/climate-energy/italy-approves-nearly-700-million-new-subsidies-evs-2025-08-08/",
+        image_url:
+          "https://www.reuters.com/resizer/v2/P2IEO732AFIKFKCCD6MDR3L3RM.jpg?auth=9b42015c4d87569630943af1eba7b2b1f9c4e5135db444f93dbc0515dbc5c6f6&width=640&quality=80",
+        published_at: "2025-08-12T12:30:00+02:00",
+        display_order: 4,
+      },
+    ],
+  },
+
+  {
+    edition_date: "2025-08-04",
+    news: [
+      {
+        id: "1",
+        title: "Mega-hub EV en Nuevos Ministerios",
+        summary: "Madrid inaugura hub con 40 cargadores ultrarrápidos.",
+        detail_summary:
+          "La Comunidad de Madrid abre en Nuevos Ministerios un mega-hub con 40 puestos de recarga (175-350 kW), energía 100 % renovable y acceso automatizado.",
+        source_url:
+          "https://www.ecoticias.com/movilidad-electrica/madrid-estacion-carga-espana",
+        image_url:
+          "https://www.ecoticias.com/wp-content/uploads/2025/08/madrid-futuro-estacion-carga-750x422.jpg",
+        published_at: "2025-08-05T08:00:00Z",
+        display_order: 1,
+      },
+      {
+        id: "2",
+        title: "Toyota fabricará más EV en Europa",
+        summary: "Toyota planea producir más EV localmente en Europa.",
+        detail_summary:
+          "Toyota decide fabricar en Europa una parte importante de su gama eléctrica para adaptarse a regulaciones y acelerar su electrificación.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/sus-hibridos-son-exito-pero-toyota-quiere-fabricar-en-europa-muchos-sus-coches-electricos_81519_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/23/64/5/toyota_4_1000x563.jpeg",
+        published_at: "2025-08-06T11:00:00Z",
+        display_order: 2,
+      },
+      {
+        id: "3",
+        title: "EV chino reivindica 820 km de autonomía",
+        summary: "Nuevo eléctrico chino homologa 820 km CLTC (~750 km WLTP).",
+        detail_summary:
+          "Este EV chino rompe el récord de autonomía (820 km CLTC, ~750 km WLTP), lo que plantea un nuevo estándar a su llegada a Europa.",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/820-kilometros-autonomia-este-electrico-marca-de-records-pero-lo-veremos-en-espana_81535_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/24/28/3/820-kilometros-de-autonomia-electrico-marca-de-records-espana-3-detalle_4_1000x563.jpeg",
+        published_at: "2025-08-07T09:15:00Z",
+        display_order: 3,
+      },
+      {
+        id: "4",
+        title: "NIO Firefly EV llega a Europa por 23.570 €",
+        summary:
+          "El compacto eléctrico Firefly EV de NIO llegará a Europa desde 23.570 €.",
+        detail_summary:
+          "NIO confirma el lanzamiento del Firefly EV en Países Bajos y Noruega el 14 de agosto, con expansión posterior en Europa. Precio anunciado: 279.900 coronas (~23.570 €).",
+        source_url:
+          "https://www.hibridosyelectricos.com/coches/por-23570-euros-este-compacto-electrico-chino-llega-europa-robarle-clientes-futuro-volkswagen-id2_81590_102.html",
+        image_url:
+          "https://www.hibridosyelectricos.com/uploads/s1/11/26/74/4/firefly-ev_4_1000x563.jpeg",
+        published_at: "2025-08-05T09:00:00+02:00",
+        display_order: 4,
+      },
+      {
+        id: "5",
+        title: "Tesla EV económico derivado del Model Y",
+        summary: "Tesla confirma EV barato basado en el Model Y.",
+        detail_summary:
+          "Tesla planea lanzar un EV asequible basado en el Model Y con producción en la segunda mitad de 2025 y precio por debajo de 30 000 USD.",
+        source_url:
+          "https://www.theverge.com/tesla/713026/tesla-cheaper-model-y-stripped-down",
+        image_url:
+          "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25434354/Screenshot_2024_05_05_at_10.54.59_AM.png?quality=90&strip=all&crop=8.4074941451991%2C0%2C83.185011709602%2C100&w=750",
+        published_at: "2025-08-04T14:00:00Z",
+        display_order: 5,
+      },
+      {
+        id: "6",
+        title: "España supera las 123 000 ventas electrificadas",
+        summary: "España ya ha vendido más EV e híbridos que en todo 2024.",
+        detail_summary:
+          "Hasta el 1 de agosto, España ha matriculado 123 315 vehículos electrificados (+93 % vs 2024), superando el volumen total de 2024.",
+        source_url:
+          "https://asociacionaeae.es/espana-ya-ha-vendido-en-siete-meses-de-2025-tantos-electricos-e-hibridos-enchufables-como-en-todo-2024/",
+        image_url:
+          "https://asociacionaeae.es/wp-content/uploads/2025/02/1713798325-14-1-polestar-3-overview-gallery-m-1160x653.webp",
+        published_at: "2025-08-04T09:00:00Z",
+        display_order: 6,
+      },
+      {
+        id: "7",
+        title: "Lucid Air debuta en Europa",
+        summary: "La berlina premium Lucid Air llega al mercado europeo.",
+        detail_summary:
+          "Lucid Motors lanza en Europa la versión de su berlina eléctrica Air, destacada por su gran autonomía y pantalla curva 5K en el salpicadero.",
+        source_url: "https://es.wikipedia.org/wiki/Lucid_Air",
+        image_url:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lucid_Air_IAA_2023_1X7A0548.jpg/250px-Lucid_Air_IAA_2023_1X7A0548.jpg",
+        published_at: "2025-08-08T12:00:00Z",
+        display_order: 7,
+      },
+    ],
+  },
+  {
     edition_date: "2025-07-28",
     news: [
       {
