@@ -1,0 +1,27 @@
+[
+  {
+    "edition_date": "2025-09-22",
+    "news": [
+      {
+        "id": "1",
+        "title": "Tesla presenta nueva batería",
+        "summary": "Un avance en autonomía",
+        "detail_summary": "Tesla ha anunciado una nueva batería con mayor densidad energética...",
+        "source_url": "https://forococheselectricos.com/...",
+        "image_url": "https://example.com/tesla.jpg",
+        "published_at": "2025-09-22T10:00:00Z",
+        "display_order": 1
+      },
+      {
+        "id": "2",
+        "title": "Volkswagen lanza SUV eléctrico en Europa",
+        "summary": "Competirá en el segmento medio",
+        "detail_summary": "Volkswagen ha lanzado un nuevo SUV eléctrico que competirá directamente con el Tesla Model Y...",
+        "source_url": "https://hibridosyelectricos.com/...",
+        "image_url": "https://example.com/vw.jpg",
+        "published_at": "2025-09-22T12:00:00Z",
+        "display_order": 2
+      }
+    ]
+  }
+]
