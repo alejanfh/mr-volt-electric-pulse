@@ -1,5 +1,80 @@
 [
   {
+    "edition_date": "2025-10-06",
+    "news": [
+      {
+        "id": "2025-10-10_1",
+        "title": "El Tesla Model Y Standard llega a España con un precio más competitivo",
+        "summary": "Tesla lanza en España el Model Y Standard RWD por 39.990 euros, más barato que antes.",
+        "detail_summary": "Tesla ha presentado en España su nueva versión de acceso del Model Y, el Standard RWD, que sustituye al anterior modelo y reduce su precio hasta los 39.990 euros. Este SUV eléctrico ofrece una autonomía homologada de 534 km y acelera de 0 a 100 km/h en 7,2 segundos. La llegada de esta versión más asequible supone un movimiento estratégico para captar a un público más amplio en el mercado español, donde la competencia en eléctricos sigue creciendo. Las primeras entregas están previstas para finales de este año, lo que refuerza la oferta de Tesla en nuestro país con un modelo más accesible y competitivo.",
+        "source_url": "https://forococheselectricos.com/noticias/tesla-model-y-standard-precio-espana-20251010-38561.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/fa6bec1ce6a8577400aede9862d973c9808faf41c5296db2b56667402256a974.jpeg",
+        "published_at": "2025-10-10T07:42:42.000Z",
+        "display_order": 1
+      },
+      {
+        "id": "2025-10-09_2",
+        "title": "El Congreso aprueba la nueva Ley de Movilidad Sostenible en España",
+        "summary": "La nueva ley impulsa la movilidad eléctrica y prepara el camino hacia la neutralidad climática en 2050.",
+        "detail_summary": "Después de años de retrasos, el Congreso de los Diputados ha dado luz verde a la Ley de Movilidad Sostenible, una norma clave para transformar el transporte en España. Esta ley contempla cambios en las etiquetas de la DGT, la posible implantación de peajes y un aumento significativo de puntos de recarga para vehículos eléctricos. Aunque aún debe pasar por el Senado y publicarse en el BOE, su aprobación es un paso fundamental para fomentar la movilidad limpia y alcanzar la neutralidad climática en 2050, un objetivo crucial para el futuro del país y la reducción de emisiones.",
+        "source_url": "https://forococheselectricos.com/noticias/egobierno-aprueba-nueva-ley-movilidad-sostenible-20251009-38549.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/e512786eee8076fc66cf11a1db81475b265a52b5caa2be0386e20afb47c36119.jpeg",
+        "published_at": "2025-10-09T08:36:29.000Z",
+        "display_order": 2
+      },
+      {
+        "id": "2025-10-09_3",
+        "title": "SEAT y CUPRA confirman a Markus Haupt como nuevo CEO para liderar la electrificación",
+        "summary": "Markus Haupt asume oficialmente la dirección ejecutiva de SEAT y CUPRA en plena transición eléctrica.",
+        "detail_summary": "Tras seis meses como CEO interino, Markus Haupt ha sido nombrado oficialmente director ejecutivo de SEAT y CUPRA. Este nombramiento llega en un momento clave, ya que ambas marcas españolas están inmersas en un proceso de electrificación acelerado. Haupt, que anteriormente fue vicepresidente ejecutivo de Producción y Logística, mantendrá la estrategia de electrificación iniciada por su predecesor, Wayne Griffiths. Su liderazgo será fundamental para consolidar la presencia de SEAT y CUPRA en el mercado de vehículos eléctricos, impulsando la innovación y la competitividad en España y Europa.",
+        "source_url": "https://forococheselectricos.com/noticias/seat-cupra-nuevo-ceo-20251010-38559.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/bfb3af2370e66a7ed8eef752311bb1b03ac076a010a0592ce019c4e9230b4c46.jpeg",
+        "published_at": "2025-10-10T06:02:46.000Z",
+        "display_order": 3
+      },
+      {
+        "id": "2025-10-09_4",
+        "title": "Renault anuncia que sus próximos eléctricos serán más baratos que los térmicos",
+        "summary": "Renault avanza hacia una gama eléctrica más asequible con mejoras en autonomía y carga.",
+        "detail_summary": "Renault ha revelado que sus futuros coches eléctricos del segmento C no solo mejorarán en autonomía, eficiencia y carga rápida, sino que también serán más económicos que sus equivalentes de combustión. Guido Haak, responsable de Programas del Grupo Renault, ha explicado que la marca está centrando sus inversiones en esta nueva generación de vehículos eléctricos, con la intención de dejar de lanzar nuevos modelos térmicos y apostar por una electrificación total a principios de la próxima década. Esta estrategia es clave para el mercado español, donde la demanda de eléctricos sigue creciendo y la competitividad en precios es fundamental.",
+        "source_url": "https://forococheselectricos.com/noticias/muy-pronto-coste-electricos-mas-bajo-que-combustion-renault-20251010-38560.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/9688d64ee054b6a5ed05f4a152fe91f12bec9277c2157dd45ce6f468fbb736e0.jpeg",
+        "published_at": "2025-10-10T06:19:14.000Z",
+        "display_order": 4
+      },
+      {
+        "id": "2025-10-09_5",
+        "title": "Renault inaugura un laboratorio de baterías para innovar en tecnología eléctrica",
+        "summary": "El nuevo laboratorio en Francia potenciará el desarrollo de baterías más duraderas y eficientes.",
+        "detail_summary": "Renault ha abierto el Battery Cell Innovation Laboratory en su Centro Técnico de Lardy, Francia, un espacio dedicado al desarrollo y evaluación de prototipos de celdas de batería. Con más de 120 equipos de última generación, este laboratorio permitirá a Renault avanzar en la durabilidad, carga rápida y nuevas tecnologías para baterías, además de facilitar la búsqueda de alianzas estratégicas. Esta iniciativa es fundamental para fortalecer la competitividad de Renault en el mercado eléctrico europeo y mejorar la experiencia de los usuarios con vehículos más eficientes y fiables.",
+        "source_url": "https://forococheselectricos.com/noticias/renault-inaugura-laboratorio-baterias-20251009-38557.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/8dc45abd336ce9fdbfc44c8c35f30515136b12920269aa2ecf35cfc00ae46954.jpeg",
+        "published_at": "2025-10-09T15:38:11.000Z",
+        "display_order": 5
+      },
+      {
+        "id": "2025-10-09_6",
+        "title": "BYD actualiza el Atto 3 con más potencia y batería ampliada",
+        "summary": "El popular SUV eléctrico de BYD gana potencia y podría incorporar sistema de 800 voltios.",
+        "detail_summary": "BYD ha presentado una profunda actualización para su exitoso SUV eléctrico Atto 3, que ahora contará con un motor de 313 CV, un salto significativo frente a los 204 CV anteriores. Además, se espera que incluya un sistema eléctrico de 800 voltios, mejorando la carga rápida y la eficiencia. Aunque los cambios exteriores son mínimos, con nuevas llantas de 18 pulgadas, esta renovación refuerza la posición del Atto 3 en el competitivo mercado europeo y mundial, ofreciendo a los usuarios un vehículo más potente y con mayor autonomía para afrontar el día a día.",
+        "source_url": "https://forococheselectricos.com/noticias/byd-actualiza-atto-3-mas-potente-20251010-38558.html",
+        "image_url": "https://press.forococheselectricos.com/panel/img/editorial/fe20a2a6ebb3c09c67f72b5294fd221f78aed845f712d5d5b36e9f4bf44b86a3.jpeg",
+        "published_at": "2025-10-10T05:49:58.000Z",
+        "display_order": 6
+      },
+      {
+        "id": "2025-10-09_7",
+        "title": "El Chevrolet Bolt regresa como alternativa asequible a Tesla en Estados Unidos",
+        "summary": "General Motors presenta el renovado Bolt EV, el eléctrico más barato del mercado estadounidense.",
+        "detail_summary": "General Motors ha anunciado el regreso del Chevrolet Bolt EV, un coche eléctrico de acceso que complementará al Equinox EV. Este modelo, una evolución profunda del original de 2016, llegará a principios de 2026 con un precio de partida de 28.995 dólares, convirtiéndose en el eléctrico más económico de Estados Unidos. Su diseño y especificaciones buscan competir directamente con los Tesla Model 3 y Model Y Standard, ofreciendo una opción más asequible para quienes buscan entrar en el mundo de la movilidad eléctrica. Aunque esta noticia no afecta directamente al mercado español, es relevante para entender la dinámica global de la electrificación.",
+        "source_url": "https://forococheselectricos.com/noticias/chevrolet-bolt-resucita-20251009-38554.html",
+        "image_url": "",
+        "published_at": "2025-10-09T13:12:10.000Z",
+        "display_order": 7
+      }
+    ]
+  },
+  {
     "edition_date": "2025-10-12",
     "created_at": "2025-10-17T07:31:58.436Z",
     "news": [
