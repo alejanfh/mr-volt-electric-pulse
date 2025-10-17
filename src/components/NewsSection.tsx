@@ -12,8 +12,6 @@ export const NewsSection = () => {
   const { editionDate } = useEdition();
   const { data: editionData, isLoading } = useEditionNews(editionDate);
 
-  console.log("data", editionData);
-
   if (isLoading) {
     return (
       <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white text-center flex justify-center">
