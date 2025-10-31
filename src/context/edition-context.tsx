@@ -1,7 +1,11 @@
 // context/EditionContext.tsx
 import { createContext, useContext, useState, ReactNode, useMemo } from "react";
-import { addWeeks, subWeeks } from "date-fns";
-import { getWeekStartDate, getFallbackNewsForWeek } from "@/data/fallbackNews";
+import { addDays, addWeeks, subWeeks } from "date-fns";
+import {
+  getWeekStartDate,
+  getFallbackNewsForWeek,
+  getAdjustedWeekStartDatePlusOne,
+} from "@/data/fallbackNews";
 
 type EditionContextType = {
   editionDate: string;
@@ -19,7 +23,9 @@ export function EditionProvider({ children }: { children: ReactNode }) {
     getWeekStartDate(new Date())
   );
 
-  const previousWeek = getWeekStartDate(subWeeks(editionDate, 1));
+  const previousWeekDate = subWeeks(editionDate, 1);
+  const previousWeek = getAdjustedWeekStartDatePlusOne(previousWeekDate);
+
   const nextWeek = getWeekStartDate(addWeeks(editionDate, 1));
 
   const value = useMemo(() => {

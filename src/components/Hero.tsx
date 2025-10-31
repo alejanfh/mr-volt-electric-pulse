@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { format, startOfWeek, endOfWeek } from "date-fns";
 import { es } from "date-fns/locale";
-import { useEditionNavigation } from "@/hooks/useEditionNavigation";
 import { useEdition } from "@/context/edition-context";
 
 export const Hero = () => {
